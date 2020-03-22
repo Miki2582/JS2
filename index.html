@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program za obavljanje osnovnih aritmetičkih operacija</title>
+</head>
+<body>
+    
+<script>
+    var numberA = prompt( "Please enter number A: ");
+    var oper = prompt('Please enter operator: ');
+    var numberB = prompt('Please enter number B: ');
+    
+
+    if (oper === ('+')) {
+        var numberB = parseInt(numberA) + parseInt(numberB);
+        alert('Result is: '+ numberB);
+    }
+    else if (oper ===('-')) {
+        var numberB = parseInt(numberA) - parseInt(numberB);
+        alert('Result is: '+ numberB);
+     }
+    else if (oper === ('*')) {
+        var numberB = parseInt(numberA) * parseInt(numberB);
+        alert('Result is: '+ numberB);    }
+
+    else if (oper === ('/')) {
+        if(numberB == 0){
+
+            throw Error('Division by zero is not allowed')
+         }
+        else { var numberB = parseInt(numberA) / parseInt(numberB);
+        alert('Result is: '+ numberB.toFixed(3));}
+    
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
